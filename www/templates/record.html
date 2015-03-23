@@ -1,0 +1,14 @@
+<ion-view view-title="Search">
+  <ion-content class="padding-horizontal">
+    <h1 style="text-align:center;margin-top:10px">{{ vm.title }}</h1>
+    <br>
+    <button class="button button-block button-positive" ng-click="vm.addWin()">Add Win</button>
+    <button class="button button-block button-assertive" ng-click="vm.addLoss()">Add Loss</button>
+    <br>
+    <div class="card" ng-show="vm.wins > 0 && vm.losses > 0">
+      <div class="item item-text-wrap">
+        &nbsp;&nbsp;&nbsp;&nbsp;Winning percentage - {{ vm.winRatio }}%
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
